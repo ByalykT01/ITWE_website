@@ -5,7 +5,7 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-  background-color: azure;
+  background: linear-gradient(0.25turn, rgb(240, 255, 255), rgb(79, 109, 122));
 }
 
 a{
@@ -58,9 +58,9 @@ nav ul li a:hover{
 .main-heading{
   width: 600px;
   position: absolute;
-  left: 15%;
-  top: 50%;
-  transform: translate(-15%, -50%);
+  left: 20%;
+  top: 43%;
+  transform: translate(-20%, -43%);
 }
 .main-heading h1{
   font-size: 55px;
@@ -94,7 +94,7 @@ div form input{
   padding: 12px 10px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 2px solid black;
   border-radius: 4px;
 }
 
@@ -103,6 +103,51 @@ div form textarea{
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 2px solid black;
   border-radius: 4px;
+}
+
+.interests{
+  width: 100%;
+  height: 90vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -100px;
+}
+
+.interests-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interests-box{
+  background-color: #A0B6BD;
+  width: 400px;
+  height: 500px;
+  margin: 50px;
+  border-radius: 7px;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.219);
+}
+
+.i-text{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.i-text h2{
+  margin-top: 12px;
+  font-size: 35px;
+}
+
+.i-text p{
+  text-align: justify;
+  margin: 15px;
+  font-size: 25px;
 }
