@@ -1,26 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: linear-gradient(0.25turn, rgb(240, 255, 255), rgb(79, 109, 122));
 }
 
-a{
+a {
   text-decoration: none;
 }
-ul{
+ul {
   list-style: none;
 }
-input,button,textarea{
+input,
+button,
+textarea {
   border: none;
   outline: none;
 }
 /************NAVIGATION************/
 
-nav{
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -30,11 +32,11 @@ nav{
   z-index: 1;
 }
 
-nav ul{
+nav ul {
   display: flex;
 }
 
-nav ul li a{
+nav ul li a {
   height: 40px;
   line-height: 43px;
   margin: 3px;
@@ -46,50 +48,50 @@ nav ul li a{
   letter-spacing: 1px;
   border-radius: 3px;
   transition: 0.2s ease-in-out;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   background-color: rgb(28, 55, 56);
   color: #f0ffff;
   box-shadow: 5px 10px 30px rgba(28, 55, 56, 0.75);
 }
 
-.main-heading{
+.main-heading {
   width: 600px;
   position: absolute;
   left: 20%;
   top: 43%;
   transform: translate(-20%, -43%);
 }
-.main-heading h1{
+.main-heading h1 {
   font-size: 55px;
   margin: 0px;
   letter-spacing: 2px;
   color: rgb(0, 29, 16);
 }
 
-.main-heading p{
+.main-heading p {
   color: rgb(28, 55, 56);
 }
 
-.main-btn{
+.main-btn {
   width: 120px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:rgb(0, 29, 16);
+  background-color: rgb(0, 29, 16);
   border-radius: 10px;
   color: #f0ffff;
   transition: 0.2s ease-in-out;
 }
 
-.main-btn:hover{
+.main-btn:hover {
   box-shadow: 5px 10px 30px rgba(28, 55, 56, 0.75);
 }
 
-div form input{
+div form input {
   width: 100%;
   padding: 12px 10px;
   margin: 8px 0;
@@ -98,7 +100,7 @@ div form input{
   border-radius: 4px;
 }
 
-div form textarea{
+div form textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -107,7 +109,7 @@ div form textarea{
   border-radius: 4px;
 }
 
-.interests{
+.interests {
   width: 100%;
   height: 90vh;
   box-sizing: border-box;
@@ -118,14 +120,14 @@ div form textarea{
   margin-top: -100px;
 }
 
-.interests-container{
+.interests-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.interests-box{
-  background-color: #A0B6BD;
+.interests-box {
+  background-color: #a0b6bd;
   width: 400px;
   height: 500px;
   margin: 50px;
@@ -133,20 +135,19 @@ div form textarea{
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.219);
 }
 
-.i-text{
+.i-text {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  
 }
 
-.i-text h2{
+.i-text h2 {
   margin-top: 12px;
   font-size: 35px;
 }
 
-.i-text p{
+.i-text p {
   text-align: justify;
   margin: 15px;
   font-size: 25px;
