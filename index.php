@@ -12,20 +12,27 @@
       <nav>
         <ul class="menu">
           <li>
-            <a href="index.html" class="main-btn">Home</a>
+            <a href="index.php?id=1">Home</a>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a href="index.php?id=2">About</a>
           </li>
           <li>
-            <a href="feedback.html">Feedback</a>
+            <a href="index.php?id=3">Feedback</a>
           </li>
         </ul>
       </nav>
-      <div class="main-heading">
-        <h1>Welcome to my website!</h1>
-        <p>It was created using HTML, CSS, PHP and MySQL as a project for IT Work Environment</p>
-      </div>
     </section>
+    <article id="contents">
+<?php
+	 if(empty($_GET["id"])) $_GET["id"]=1;
+	 if($_GET["id"]==1) include("home.php");
+	 if($_GET["id"]==2) include("about.html");
+	 if($_GET["id"]==3) include("feedback1.php");
+   if($_GET["id"]==4) include("display.php");
+   if($_GET["id"]==5) include("edit.php");
+   if($_GET["id"]==6) include("delete.php");
+?>
+</article>
   </body>
 </html>

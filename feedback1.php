@@ -9,35 +9,25 @@
   </head>
   <body>
     <section>
-      <nav>
-        <ul class="menu">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="feedback.html" class="main-btn">Feedback</a>
-          </li>
-        </ul>
-      </nav>
       <div class="main-heading">
-        <h1>Your feedback about my website</h1>
+        <h1>Your feedback</h1>
         <form action="feedback.php" method="post">
           <p>Your name</p>
           <br>
-          <input type="text" name="name">
+          <input type="text" name="name" placeholder="Name">
           <br>
           <p>Your email</p>
           <br>
-          <input type="text" name="email">
+          <input type="text" name="email" placeholder="Email">
           <br>
           <p>Your comment</p>
           <br>
-          <textarea name="comment" rows="15" cols="20"></textarea>
+          <textarea name="comment" rows="15" cols="20" placeholder="Comment"></textarea>
           <br>
-          <input type="submit" value="Submit" class="main-btn">
+          <input type="submit" value="Submit" class="main-btn-post">
+          <a href="index.php?id=4">
+            <input type="button" value="Comments" class="main-btn-post">
+          </a>
         </form>
       </div>
     </section>
