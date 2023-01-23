@@ -11,7 +11,7 @@
     <section>
       <div class="main-heading">
         <h1>Your feedback</h1>
-        <form action="feedback.php" method="post">
+        <form action="index.php?id=7" method="post">
           <p>Your name</p>
           <br>
           <input type="text" name="name" placeholder="Name">

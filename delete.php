@@ -11,7 +11,7 @@
     <section>
       <div class="main-heading">
         <h1>Delete comment by its ID</h1>
-        <form action="" method="post">
+        <form action="index.php?id=9" method="post">
 
           <p>ID</p>
           <br>
@@ -26,25 +26,3 @@
     </section>
   </body>
 </html>
-<?php
-$hostname = "localhost";
-    $username = "byalykt";
-    $password = "123qwe";
-    $dbname = "byalykt";
-
-    $conn = new mysqli($hostname, $username, $password, $dbname);
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }
-    if (isset($_POST['delete'])) {
-      $id = $_POST['id'];
-      $sql = "DELETE FROM `feedback` WHERE id='$id'";
-
-      if ($conn->query($sql) === TRUE) {
-        echo "Record deleted successfully";
-      } else {
-        echo "Error deleting record: " . $conn->error;
-      }
-}
-$conn->close();
-?>

@@ -32,7 +32,7 @@
   <nav>
     <ul class="menu">
       <li>
-        <a href="index.php">Go home</a>
+        <a href="index.php?id=4">Comments</a>
       </li>
     </ul>
   </nav>
